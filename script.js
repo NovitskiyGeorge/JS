@@ -1,40 +1,23 @@
-// let persone = {
-//     name: 'John',
-//     age: 25,
-//     isMarried: false
-// };
+var money = prompt('Ваш бюджет на месяц?', '');
+var time = prompt('Введите дату в формате YYYY-MM-DD', '2020-09-24');
+let item = prompt('Введите обязательную статью расходов в этом месяце', '');
+let howMuch = prompt('Во сколько обойдется?', '');
 
-// console.log(persone['name']);
+let appData = {
+    budget: money,
+    timeData: time,
+    expenses: {
+        item:howMuch
+    },
+    optionalExpenses: {},
+    income: [],
+    savings: false
+};
 
-// let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
+for(let i=0; i < 1; i++) {
+    item = prompt('Введите обязательную статью расходов в этом месяце', '');
+    howMuch = prompt('Во сколько обойдется?', '');
+}
 
-// console.log(arr[0]);
-// alert('hello!');
-
-// let answer = confirm('Are you here?');
-
-// console.log(answer);
-
-// let answer = +prompt('Есть ли вам 18?', 'да');
-
-// console.log(typeof(answer));
-
-// console.log('arr' + '- object');
-// console.log(3 + '- object');
-// console.log(3 + 2 + +'- object');
-
-let incr = 10,
-    decr = 10;
-
-console.log(incr++);
-console.log(decr--);
-
-console.log(incr);
-console.log(decr);
-
-console.log('2' === 2);
-
-let isChecked = false,
-    isClose = false;
-
-console.log(isChecked && isClose);
+var budgetDay = money / 30;
+alert(budgetDay);
